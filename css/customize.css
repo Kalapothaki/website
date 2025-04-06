@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  img.scale-with-grid {
+      width: 100%; /*override existing setting*/
+  }
+  
+  img.full-height {
+      height: 100%; /*override existing setting*/
+  }
+  .profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+  }
+
+  .me-img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    /* margin-right: 20px; */
+    flex-shrink: 0;
+  }
+  .profile p {
+    margin: 0;
+    flex: 1; 
+  }
+
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .me-img {
+      width: 80%;          
+      margin-bottom: 15px;
+    }
+  }
+ 
+  
+  
+  /*MODIFICATIONS*/
+  
+  .quarter-bottom-rel { margin-bottom: 4% !important; }
+  .quarter-bottom { margin-bottom: 25px !important; }
+  .half-bottom { margin-bottom: 50px !important; }
+  .one-bottom, .add-bottom { margin-bottom: 100px !important; }
+  .two-bottoms { margin-bottom: 200px !important; }
+  .one-top { margin-top: 100px !important; }
+  .two-tops { margin-top: 200px !important; }
+  
+  .center{
+      text-align: center;
+  }
+
+  
+body {
+    background-color: #f8fafc; 
+    color: #334155; 
+    font-family: 'Helvetica Neue', sans-serif;
+    padding-top: 80px;
+  }
+  
+  h1, h2, h3 {
+    color: #1e293b; 
+  }
+
+  a {
+    color: #d97706;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #f59e0b;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    
+  }
+
+  header nav a {
+    color: #f8fafc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #f59e0b;
+  }
+  header h1 {
+    color: #f8fafc ;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e293b; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    z-index: 10;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  body p{
+    font-size: 1.1em;
+
+  }
